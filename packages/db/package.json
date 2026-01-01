@@ -1,0 +1,18 @@
+{
+    "name": "@repo/db",
+    "version": "0.0.0",
+    "dependencies": {
+        "@prisma/client": "^5.11.0",
+        "bcrypt": "^5.1.1"
+    },
+    "devDependencies": {
+        "cross-env": "^10.1.0",
+        "prisma": "5.11.0"
+    },
+    "exports": {
+        "./client": "./index.ts"
+    },
+    "prisma": {
+        "seed": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 ts-node prisma/seed.ts"
+    }
+}
